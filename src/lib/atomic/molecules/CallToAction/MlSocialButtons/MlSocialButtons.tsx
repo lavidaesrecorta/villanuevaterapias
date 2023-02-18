@@ -1,10 +1,10 @@
 import AtIconButton from "@atomic/atoms/IconButton/AtIconButton";
-export interface ICallToAction {
+export interface IMlSocialButtons {
   sampleTextProp: string;
 }
 
 
-const CallToAction: React.FC<ICallToAction> = ({ sampleTextProp }) => {
+const MlSocialButtons: React.FC<IMlSocialButtons> = ({ sampleTextProp }) => {
   return (
     <div className="block my-4 py-8 mx-auto lg:w-96 w-full">
       <button className="btn btn-secondary btn-block btn-lg" onClick={(e) => { window.open("https://wa.me/56964964397") }}>Agenda tu cita ahora!</button>
@@ -17,4 +17,4 @@ const CallToAction: React.FC<ICallToAction> = ({ sampleTextProp }) => {
   );
 };
 
-export default CallToAction;
+export default MlSocialButtons;

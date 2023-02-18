@@ -10,10 +10,10 @@ const base: IFeaturesBase = {
 const cards: IFeaturesCards = {
   displayType: 'cards',
   cards: [
-    mockAtCardProps.base,
-    mockAtCardProps.base,
-    mockAtCardProps.base,
-    mockAtCardProps.base,
+    mockAtCardProps.auriculoTerapia,
+    mockAtCardProps.reiki,
+    mockAtCardProps.terapiaFloral,
+    mockAtCardProps.masaje,
   ]
 }
 

@@ -1,7 +1,10 @@
 import { ICallToAction } from './CallToAction';
 
 const base: ICallToAction = {
-  sampleTextProp: 'Hello world!',
+  title: "Hello World!",
+  subtitle: "This is the subtitle",
+  buttonText: "This is the button!",
+  buttonClick: (e) => { },
 };
 
 export const mockCallToActionProps = {

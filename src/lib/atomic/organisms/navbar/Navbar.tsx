@@ -3,19 +3,19 @@ import React, { CSSProperties, useRef, useState } from "react";
 import useElementOnScreen from "@lib/auxiliar/Animate/elementOnScreenHook";
 
 export interface INavbar {
-  baseColor?: string;
+  logoSrc: string;
 }
 
-const Navbar: React.FC<INavbar> = ({ }) => {
+const Navbar: React.FC<INavbar> = ({logoSrc = "/logo.png"}) => {
+
   const [navbarState, setNavbarState] = useState(false);
   const handleNavigationToggle = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setNavbarState(event.target.checked);
   };
-
+  
   const animationStart = "bg-opacity-70"
-
   const animationEnd = "bg-opacity-100"
 
   const ref = useRef<HTMLDivElement>(null);
@@ -55,7 +55,7 @@ const Navbar: React.FC<INavbar> = ({ }) => {
             </label>
           </div>
           <Image
-            src="/andrea/logo.png"
+            src={logoSrc}
             height={75}
             width={75}
             alt="Logo"
